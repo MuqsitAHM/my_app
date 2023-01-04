@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "162856318883",
+    "project_id": "hyper-grocery-app",
+    "storage_bucket": "hyper-grocery-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162856318883:android:860893697466cfe0d28c16",
+        "android_client_info": {
+          "package_name": "com.example.my_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162856318883-3oau3qujq97p9u97hcb0tphcssmse4he.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.my_app",
+            "certificate_hash": "2f7ce6c69e391e0fb94380d4542a736d5c652ca9"
+          }
+        },
+        {
+          "client_id": "162856318883-8hvm3ct9h8a3fp1fsm9hsou6jq4stv8v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBw4In3_0z9IdnkYZouibxibxGxamDfOM8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "162856318883-8hvm3ct9h8a3fp1fsm9hsou6jq4stv8v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
