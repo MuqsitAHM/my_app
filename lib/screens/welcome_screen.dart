@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/providers/auth_provider.dart';
+import 'package:my_app/providers/location_provider.dart';
 import 'package:my_app/screens/onboard_screen.dart';
 import 'package:provider/provider.dart';
+
+import 'map_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   static const String id = 'welcome-screen';
@@ -111,6 +114,8 @@ class WelcomeScreen extends StatelessWidget {
         ),
       );
     }
+    
+    final locationData = Provider.of<LocationProvider>(context,listen: false);
 
     return Scaffold(
       body: Padding(
@@ -149,7 +154,15 @@ class WelcomeScreen extends StatelessWidget {
                     'Set Delivery Location',
                     style: TextStyle(color: Colors.grey),
                   ),
-                  onPressed: () {},
+                  onPressed: () async{
+
+                    await locationData.getCurrentPosition();
+                    if(locationData.permissionAllowed == true){
+                      Navigator.pushReplacementNamed(context, MapScreen.id);
+                    }else{
+                      print('Permission not allowed');
+                    }
+                  },
                 ),
                 //SizedBox(height: 20,),
                 TextButton(
